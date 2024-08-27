@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin:0;
+    font-family: "Inter", sans-serif;
+    background-color: #F3F5FC;
+}
+
+body {
+
+}
+
+header {
+
+}
+
+.logo {
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+main {
+    display: flex;
+}
+
+.ingresar {
+
+    width: 65%;
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+}
+
+.ingresar_texto_a_encriptar {
+    color: #0A3871;/*color de fuente*/
+    font-size: 2rem;/*tamaño de fuente*/
+    width: 80%;/*ancho*/
+    height: 80%;/*alto*/
+    border: none;/*sin borde*/
+    resize: none;/*para que el tamaño del cuadro de texto quede fijo y no se pueda agrandar o achicar desde los extremos*/
+    text-transform: lowercase;/*El texto que se ingresa se transforma en minúscula*/
+    cursor: pointer;/*aparece la manito cuando ingreso al cuadro de texto*/
+}
+.ingresar_texto_a_encriptar:focus {
+    outline: none; /* Cuando se empieza a escribir en el cuadro de texto, aparece el borde que se sacó. Con esta opción, sigue escondido el borde aunque se empiece a escribir */
+}
+.ingresar_texto_a_encriptar::placeholder {
+    color: #0A3871;
+    font-size: 2rem;
+}
+            
+.ingresar_atencion {
+
+    display: flex;/*para alinear (horizontalmente por defecto)*/
+    gap: 0.75%;/*para separar todos los elementos entre si*/
+}
+
+.ingresar_atencion_informacion {
+    font-size: 0.75rem;/*tamaño de fuente*/
+}
+
+.botones {
+
+    height: 20%;
+}
+
+.boton_encriptar {
+    background-color: #0A3871;/*color de fondo*/
+    color: #FFFFFF;/*color de fuente*/
+    font-size: 1rem;/*tamaño de fuente*/
+    width: 40%;/*ancho del botón*/
+    height: 50%;/*alto del botón*/
+    border: 1px solid #0A3871;/*espesor, tipo y color de borde*/
+    border-radius: 24px;/*radio de borde*/
+    cursor: pointer;/*aparece la manito cuando ingreso al cuadro de texto*/
+}
+
+.boton_desencriptar {
+    background-color: #D8DFE8;/*color de fondo*/
+    color: #0A3871;/*color de fuente*/
+    font-size: 1rem;/*tamaño de fuente*/
+    width: 40%;/*ancho del botón*/
+    height: 50%;/*alto del botón*/
+    border: 1px solid #0A3871;/*espesor, tipo y color de borde*/
+    border-radius: 24px;/*radio de borde*/
+    cursor: pointer;/*aparece la manito cuando ingreso al cuadro de texto*/
+}
+
+.respuesta {
+    background-color: #FFFFFF;/*color de fondo*/
+    display: flex;/*para alinear (horizontalmente por defecto)*/
+    flex-direction: column;/*para que la alineación sea en columna*/
+    align-items: center;/*para centrar los elementos en el sentido horizontal*/
+    border-radius: 32px;/*radio de borde*/
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    bottom: 5%;
+    width: 20%;
+}
+
+.respuesta_texto_encriptado {
+    background-color: #FFFFFF;/*color de fondo*/
+    color: #495057;/*color de fuente*/
+    font-size: 1.5rem;/*tamaño de fuente*/
+    border: none;/*sin borde*/
+    background-image: url("./assets/Muñeco.png");/*Establezco una imagen de fondo*/
+    background-position: bottom; /*La imagen se ubica en el centro*/
+    background-repeat: no-repeat; /*La imagen no se repetirá, solo se mostrará una vez*/
+    resize: none;/*para que el tamaño del cuadro de texto quede fijo y no se pueda agrandar o achicar desde los extremos*/
+}
+.respuesta_texto_encriptado:focus {
+    outline: none; /* Cuando se empieza a escribir en el cuadro de texto, aparece el borde que se sacó. Con esta opción, sigue escondido el borde aunque se empiece a escribir */
+}
+
+.respuesta_titulo {
+    background-color: #FFFFFF;/*color de fondo*/
+    color: #343A40;/*color de fuente*/
+    font-size: 1.5rem;/*tamaño de fuente*/
+    text-align: center;/*centrar el texto*/
+}
+
+.respuesta_informacion {
+    background-color: #FFFFFF;/*color de fondo*/
+    color: #495057;/*color de fuente*/
+    font-size: 1rem;/*tamaño de fuente*/
+    text-align: center;/*centrar el texto*/
+}
+
+.boton_copiar {
+    background-color: #FFFFFF;/*color de fondo*/
+    color: #0A3871;/*color de fuente*/
+    font-size: 1rem;/*tamaño de fuente*/
+    width: 90%;/*ancho del botón*/
+    height: 10%;/*alto del botón*/
+    border: 1px solid #0A3871;/*espesor, tipo y color de borde*/
+    border-radius: 24px;/*radio de borde*/
+    cursor: pointer;/*aparece la manito cuando ingreso al cuadro de texto*/
+    visibility: hidden;/*el boón copiar debe permanecer escondido hasta que se encripte o desencripte*/
+}
+
+footer {
+
+    margin-left: 8%;
+}
+
+
+

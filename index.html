@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./assets/Logo.png" alt="Logo de Alura">
+    </header>
+    <main>
+        <section class="ingresar">
+            <textarea class="ingresar_texto_a_encriptar" rows="18" placeholder="Ingrese el texto aqui"></textarea>
+            
+            <div class="ingresar_atencion">
+                <img class="ingresar_atencion_logo" src="./assets/Atencion.png" alt="signo atención">
+                <p class="ingresar_atencion_informacion">Sólo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="botones"> <!-- div para los botones -->
+                <button class="boton_encriptar" onclick="clickBotonEncriptar()">Encriptar</button>
+                <button class="boton_desencriptar" onclick="clickBotonDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="respuesta">
+            <textarea class="respuesta_texto_encriptado" rows="17" readonly></textarea>
+            <h3 class="respuesta_titulo">Ningún mensaje fue<br />encontrado</h3>
+            <p class="respuesta_informacion">Ingresa el texto que desees encriptar o<br />desencriptar.</p>
+            <button class="boton_copiar" onclick="copiar()">Copiar</button>
+        </section>
+    </main>
+    <footer>Desarrollado pot Bruno Jose Gallo - 2024</footer>
+
+<script src="/script.js"></script> <!--Referencio el archivo js en el archivo html-->
+
+</body>
+</html>
